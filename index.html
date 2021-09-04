@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Trigonometrie Rechner</title>
+</head>
+<body>
+<div id="container">
+    <div id="sketchHolder" style="margin: 15px;">
+        <script src="script.js"></script>
+    </div>
+    <div>
+        <input id="angleSlider" type="range" min="0" value="0" oninput="handleSlider()" style="margin: 0 0 16px 0">
+        <label for="angleSlider"></label>
+
+        <br>
+
+        <input id="noneButton" type="radio" value="1" name="radiogroup" oninput="handleSlider()" checked>
+        <label for="noneButton">None</label>
+
+        <input id="sinusButton" type="radio" value="2" name="radiogroup" oninput="handleSlider()">
+        <label for="sinusButton">Sinus</label>
+
+        <input id="cosinusButton" type="radio" value="3" name="radiogroup" oninput="handleSlider()">
+        <label for="cosinusButton">Cosinus</label>
+
+        <br>
+
+        <input id="angleInput_1" oninput="handleInput1()" style="margin: 16px 0 0 0">
+        <input id="angleInput_2" oninput="handleInput2()" style="margin: 16px 0 0 0">
+
+        <p id="sinusOutput"></p>
+        <p id="cosinusOutput"></p>
+        <p id="tangensOutput"></p>
+    </div>
+</div>
+</body>
+</html>

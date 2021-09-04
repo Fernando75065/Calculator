@@ -1,0 +1,14 @@
+html, body {
+    margin: auto;
+    padding: auto;
+}
+
+canvas {
+    display: block;
+}
+
+#container {
+    width: 1000px;
+    margin: 0 auto;
+
+}
